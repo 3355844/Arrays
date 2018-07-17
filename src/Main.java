@@ -5,14 +5,18 @@ public class Main {
         NullCounter nullCounter = new NullCounter();
         int[] arr;
         int counter;
+        int maxValue;
 
-        arr = nullCounter.fillerArr(50);
+        arr = nullCounter.fillerArr(10, 100);
         System.out.println();
         counter = nullCounter.counterNullElements(arr);
+        maxValue = nullCounter.maxElementOfArray(arr);
 
         System.out.println("Numbers of 0 in array: " + counter);
+        System.out.println("Max Value of array: " + maxValue);
 
-        System.out.println("Numbers of 0 in array: " + (new NullCounter().counterNullElements(new NullCounter().fillerArr(40))));
+
+//        System.out.println("Numbers of 0 in array: " + (new NullCounter().counterNullElements(new NullCounter().fillerArr(40))));
 
 //        Приклад анонімного класу
 //        new NullCounter().fillerArr(50);
