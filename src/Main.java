@@ -3,8 +3,17 @@ public class Main {
     public static void main(String[] args) {
 //        Обєкт класу
         NullCounter nullCounter = new NullCounter();
-        nullCounter.fillerArr(50);
+        int[] arr;
+        int counter;
+
+        arr = nullCounter.fillerArr(50);
         System.out.println();
+        counter = nullCounter.counterNullElements(arr);
+
+        System.out.println("Numbers of 0 in array: " + counter);
+
+        System.out.println("Numbers of 0 in array: " + (new NullCounter().counterNullElements(new NullCounter().fillerArr(40))));
+
 //        Приклад анонімного класу
 //        new NullCounter().fillerArr(50);
 
